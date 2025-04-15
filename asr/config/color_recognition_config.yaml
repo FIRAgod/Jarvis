@@ -1,0 +1,34 @@
+detect_config:
+  color_recognition_list:
+    roi:  # 检测区域的列表
+      left:
+        - 364
+        - 258
+        - 416
+        - 277
+      right:
+        - 971
+        - 252
+        - 1019
+        - 274
+    color: # 颜色列表
+      可乐:
+        hsv_min:
+          - 86
+          - 20
+          - 19
+        hsv_max:
+          - 113
+          - 148
+          - 100
+        confidence: 0.7
+      雪碧:
+        hsv_min:
+          - 66
+          - 70
+          - 37
+        hsv_max:
+          - 75
+          - 249
+          - 147
+        confidence: 0.7

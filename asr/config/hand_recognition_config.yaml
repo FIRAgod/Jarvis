@@ -1,0 +1,12 @@
+detect_config:
+  static_image_mode: false  # 是否使用静态图像模式，默认为False
+  max_num_hands: 1 # 最多检测的手的数量，默认为1
+  model_complexity: 0 # 模型复杂度，0为低精度模型(使用CPU运算)，1为高精度模型(使用GPU运算，需要安装CUDA)，默认为0
+  min_detection_confidence: 0.7 # 最小检测置信度，默认为0.7
+  min_tracking_confidence: 0.5 # 最小跟踪置信度，默认为0.5
+  decision_point: 0 # 手掌的哪个节点用于判定，范围为0到20，默认为0
+  roi_enable: true # 是否启用ROI，默认为False
+  roi_x1: 170 # ROI左上角x坐标，默认为170
+  roi_y1: 90 # ROI左上角y坐标，默认为90
+  roi_x2: 470 # ROI右下角x坐标，默认为470
+  roi_y2: 390 # ROI右下角y坐标，默认为390

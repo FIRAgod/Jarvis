@@ -1,0 +1,8 @@
+camera_config:
+  camera_type: REALSENSE  # 相机类型: REALSENSE(默认, 使用Intel RealSense相机)，INDEX(使用其他摄像头)，WEBCAMERA(使用网络摄像头，该功能暂未开发，无法使用)
+  index: 0 # 摄像头索引号, 仅在camera_type为INDEX时有效，默认为0
+  realsense_width: 1280 # realsense分辨率宽度，默认为640
+  realsense_height: 720 # realsense分辨率高度，默认为480
+  realsense_fps: 30 # realsense帧率，默认为60
+  image_server_ip: 127.0.0.1 # 图像服务器IP，默认为127.0.0.1
+  image_server_port: 14514 # 图像服务器端口，默认为14514
